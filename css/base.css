@@ -1,0 +1,125 @@
+/**********全局设置***********/
+*{margin:0;padding:0;}
+body{font:16px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;color: #808080;}
+a{color:#172c45;text-decoration:none;}
+a:hover{text-decoration: none !important;}
+a:focus{text-decoration: none !important;}
+a:visited{text-decoration: none;}
+li{list-style:none}
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word;margin: 0 !important;}
+section{display: block;}
+/**********全局设置*********/
+/*header  start*/
+.hh{
+	position: relative;
+}
+.littleMenu{
+	position: relative;
+}
+/*header  end*/
+/*页面base*/
+.baseBImg img{
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+.baseImg ul li{
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.baseImg ul li img{
+	width: 100%;
+}
+.baseContent{
+	padding-top: 20px;
+	margin-top: 27px;
+}
+.baseRow{
+	padding: 30px 45px 66px;
+	margin-right: 30px;
+}
+.baseRow p:nth-child(1){
+	display: block;
+	padding: 10px 15px 5px 0;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	color: #232323;
+	text-align: center;
+}
+.baseRow p:nth-child(2){
+	position: relative;
+	padding-top:22px ;
+	line-height: 1.5em;
+	font-size: 16px;
+	color: #808080;
+	text-align: center;	
+}
+.baseImg{
+	padding-top: 37px;
+}
+.baseImg li{
+	padding-right: 10px;
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+.mask{
+	text-align: center;
+	line-height: 300px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(255,255,255,0.5);
+	box-sizing: border-box;
+	display: none;
+	color: black;	
+}
+@media only screen and (min-width: 992px) {
+	.baseCon{
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+}
+@media only screen and (max-width:992px ) {
+	.baseBImg{
+		margin: 0 auto;
+		max-width: 768px;
+	}
+	.baseCon{
+		margin: 0 auto;
+		max-width: 768px;
+	}
+	.baseContent{
+		margin-top: 0;
+		padding: 20px 15px 0 15px;
+	}
+	.baseRow{
+		padding: 0 !important;
+		margin: 0;
+	}
+}
+
+/*回顶部  start*/
+.lastIcon{
+	position: fixed;
+	width: 35px;
+	height: 35px;
+	right: 15px;
+	bottom: 25px;
+	background: white;
+	z-index: 9999;
+	opacity: 0;
+}
+.lastIcon::before{
+	display: block;
+	content: '\f077';
+	font-family: FontAwesome;
+	text-align: center;
+	line-height: 35px;
+	font-size: 12px;
+}
+/*回顶部  end*/

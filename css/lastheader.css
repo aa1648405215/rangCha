@@ -1,0 +1,321 @@
+/*全局设置     start*/
+/*ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+*{margin:0;padding:0;}
+body{font:16px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;color: #808080;}
+a{color:#172c45;text-decoration:none;}
+a:hover{text-decoration: none;}
+li{list-style:none}
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word;margin: 0 !important;}
+section{display: block;}*/
+/*全局设置     end*/
+/*小于992的menu  start*/
+.littleMenu{
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	z-index: 300;
+}
+.b1 img{
+		max-height: 50px;
+	}
+/*小于992的menu  end*/
+/*大于992的menu  start*/
+.hh{
+	padding: 0 40px;
+	margin: 0 auto;
+}
+.gg{
+	display: table;
+	width: 100%;
+	min-height: 82px;
+	height: 82px;
+}
+.a{
+	/*background: palegreen;*/
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 0;
+	
+}
+.b{
+	/*background: pink;*/
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+.c{
+	/*background: darkcyan;*/
+	display: table-cell;
+	vertical-align: middle;
+	width: 224px;
+	text-align: right;
+	
+}
+.firstUl{
+	text-align: right;
+}
+.firstUl li:first-child{
+	margin-left: 0;	
+}
+.firstUl li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+	position: relative;
+}
+.firstUl li a{
+	display: block;
+	padding: 2px 0 3px 0;
+	color: #878787;
+	border: 1px solid transparent;
+}
+.firstLi a{
+	border-bottom-color: #519f10 !important;
+	color: #519f10 !important;
+}
+.firstUl li a:hover{
+	color: #519f10;
+	text-decoration: none;
+}
+.firstUl .curLine::before{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 0;
+	background: #519f10;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.6s cubic-bezier(0.215,0.61,0.355,1) 0s;
+}
+.firstUl .curLine:hover::before{	
+	width: 100%;
+	left: 0;
+	
+}
+.cc{
+	display: inline-block;
+	/*text-align: right;*/
+	padding-right: 20px;
+}
+.cc .d{
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
+}
+/*大于992的menu  end*/
+/*点击按钮后的menu  start*/
+.clickMenu{
+	position: fixed;
+	bottom: 0;
+	width: 260px;
+	text-align: left;
+	overflow: auto;
+	line-height: 1em;
+	box-sizing: border-box;
+	/*position: fixed;*/
+    perspective-origin: 0 0;
+    right: auto;
+    left: -260px;
+    top: 0;
+    overflow-x: hidden;
+    height: 100%;
+    visibility: visible;   
+    opacity: 1;
+	background: white;
+	z-index: 401;
+}
+.clickMe{
+	text-align: left;
+	line-height: 1em;
+	max-width: 100%;
+}
+.a1:before{
+    content: "\f039";
+    font-family: FontAwesome;
+}
+.a2 .login,.a2 .register{
+	display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #90af6b;
+    box-sizing: border-box;
+    float: left;
+    color: #90af6b;
+    font-size: 15px;
+}
+.a2 .login:hover{
+	color: #519F10;
+}
+.a2 .register:hover{
+	color: #519F10;
+}
+.a2 .login{
+	border-right: 1px solid #90af6b;
+}
+.a2 a{
+	color: inherit;
+}
+.b2{
+    min-height: 20px;
+    border-bottom: 1px solid #90af6b;
+    clear: both;
+}
+.b2In{
+	padding: 10px 20px;
+}
+.b2In form{
+	position: relative;
+	display: inline-block;
+	width: 220px;
+	max-width: 100%;
+}
+.formSearch{
+	box-sizing: border-box;
+	padding: 9px 10px 8px 9px;
+	width: 100%;
+	height: 37px;
+	line-height: 16px;
+	font-size: 14px;
+	border: 1px solid #90af6b;
+    color: #90af6b;
+	
+}
+.formSearch::-webkit-input-placeholder{
+	color: #90af6b;
+}
+a.fa{
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	padding: 0 10px;
+	margin: 0;
+	cursor: pointer;
+	color: white;
+	border-radius: 0;
+	border: none;
+    width: auto;
+    line-height: 37px;
+    height: 37px;
+    background: #90af6b none repeat scroll 0 0;
+	
+}
+a.fa:before{
+	content: "\f002";
+	font-family: FontAwesome;
+}
+.c2{
+	padding: 0;
+}
+.c2 li{
+	position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #90af6b;
+}
+.c2 li a{
+	display: block;
+	position: relative;
+	margin: 0 20px;
+	padding: 10px 0;
+	margin-left: 0;
+	color: #90af6b;
+	font-size: 15px;
+	/*font-weight: bold;*/
+	text-align: left;
+	padding-left: 20px;
+    display: inline-block;
+    max-width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-left 500ms cubic-bezier(.39,.575,.565,1);
+}
+.c2 li:hover a{
+	padding-left: 23px;
+    color: #519F10;
+}
+/*点击按钮后的menu  end*/
+@media only screen and (min-width: 992px) {
+	.hh{
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+	}
+	.a a img{
+		max-height: 51px;
+		width: 80px;
+	}
+	.littleMenu{
+		display: none;
+	}
+	.clickMenu{
+		display: none !important; 
+	}
+	
+}
+@media only screen and (max-width:992px ) {
+	.hh{
+		display: none;
+	}
+	.littleMenu{
+		display: block;
+	}
+	.littleMe{
+	display: table;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	}
+	.a1{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		width: 80px;
+		z-index: 333;
+		/*background: pink;*/
+	}
+	.b1{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	
+	.c1{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+		width: 80px;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+	.clickMenu{
+		display: none;
+	    transform: translate3d(260px,0px,0px);
+	}
+	.clikBg{
+		display: none;
+		transition: .25s ease-in-out;	    
+	    visibility: visible;
+	    opacity: 0.30;
+	    z-index: 400;
+	    background: #1d1e1f;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	    
+	}
+}

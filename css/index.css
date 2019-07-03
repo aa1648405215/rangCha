@@ -1,0 +1,774 @@
+/*全局设置     start*/
+ul li{list-style: none;}
+*{margin:0;padding:0;}
+body{font:16px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;color: #808080;}
+a{color:#172c45;text-decoration:none;}
+a:hover{text-decoration: none !important;}
+a:focus{text-decoration: none !important;}
+a:visited{text-decoration: none;}
+li{list-style:none}
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word;margin: 0 !important;}
+section{display: block;}
+/*全局设置     end*/
+/***************************banner轮播***********************/
+#box{
+	position: relative;	
+	width: 100%;
+	margin: 0px auto;
+    background-color: rgb(233, 233, 233);
+    padding: 0px;
+    max-height: none;
+    overflow: visible;
+    z-index: 199;   
+   max-height: none;
+    height: 673px;
+    			
+}
+#box ul{
+	margin-bottom: 0px;
+}
+.picBox li img{
+	width: 100%;
+	height: 100%;
+	display: block;				
+}
+#box .picBox{
+	width: 100%;
+	max-height: none;
+	height: 100%;
+	/*height: auto;*/
+	position: relative;
+}
+.pic{
+	width: 100%;
+	/*height: 100%;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.5;
+}
+.pic:nth-child(1){
+	opacity: 1;
+}
+.pic:nth-child(1){
+	opacity: 0;
+}
+#box .boxBtn{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -61px;
+
+}
+.boxBtn li{
+	margin-left: 10px;
+	padding: 0px;
+	text-align: center;
+	list-style: none;
+}
+.boxBtn .btn{
+	width: 45px;
+	height: 0px;
+	text-align: center;	
+	/*line-height: 4px;*/	
+	float: left;
+	padding: 2px 12px;
+	border-radius: 0px;	
+}
+.btn:nth-child(1){
+	background: #85bf41;					
+}
+.btn:nth-child(2){
+	background: white;					
+}
+@media (max-width: 768px) {
+	.boxBtn{
+		display: none;
+	}
+}
+/**************************轮播  end*************************/
+
+/*****************************新茶上市 start********************/
+.container-fluid{
+	padding: 0;
+}
+.tea-row{
+	margin: 0;
+	padding: 0 40px;
+}
+
+.tea-row .tea-item{
+	position: relative;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+	max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+	.tea-row .tea-item{
+		width: 33.33333333333333%;
+	}
+}
+#teaRow .tea-item{
+	position: relative;
+	min-height: 1px;
+    float: left;
+    max-width: 33.27%;
+    margin-bottom: 0px;
+    border-bottom: 1px solid transparent;
+    padding: 15px;
+    margin-left: 0;
+    /*animation-delay: 1s;
+    animation-name: teaInUp;*/
+   	animation: teaInUp 1s;
+    visibility: visible;
+    transition: all .6s ease;   
+}
+@keyframes teaInUp{
+	from{
+		opacity: 0;
+		transform: translate3d(0,100%,0);
+	}
+	to{
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
+.teaLeave{
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px 15px 19px 0px;
+	text-align: center;
+}
+.teaLeaveMiddle{
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	
+}
+.teaTitle-a{
+	font-family: 微软雅黑;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #232323;
+    display: block;
+    padding: 0 0 5px 0;
+    vertical-align: bottom;
+}
+.teaTitle-b{
+    font-size: 13px;			    
+    font-weight: normal;
+    font-style: normal;
+    color: #999999;
+    display: block;
+    vertical-align: bottom;
+    
+}
+.tea-ul{
+	position: relative;
+	overflow: hidden;
+}
+
+
+.tea ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+			
+.tea-row{
+	box-sizing: border-box;
+}
+.row-col{
+	position: relative;
+	margin-right: 40px;
+}
+@media only screen and (max-width: 992px) {
+	.tea-row .tea-move2{
+		width: 100%;
+	}
+	.tea-move2{
+		
+		float: left !important;
+		max-width: 99.8% !important;
+	}
+	.tea-row .tea-item{
+		padding: 0px !important;
+	}
+}
+.tea-item .teaBox{
+	margin: 0px 20px 0px 20px;
+}
+.teaPic{
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	vertical-align: middle;
+	
+}
+.teaPic .aImg{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.tea-ul img{
+	max-width: 100%;
+}
+.aImg i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: all .6s ease;
+}
+/*li.tea-item:hover .aImg i{
+	transition: all .6s ease;
+}*/
+li.tea-item .aImg>img{
+	transition:  transform 0.6s;
+	transform: scale(1);
+}
+li.tea-item:hover .aImg>img{
+	transform: scale(1.1);
+	transition: all 1s ease;	
+}
+/*茶名*/
+/*.tea-move2 .teaBox{
+	position: relative;
+}*/
+.tea-move2 .teaName{
+	position: relative;
+    min-width: 80px;
+    clear: both;
+}
+.tea-ul li .teaName{
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ededed;
+    padding-bottom: 15px;
+    font-weight: normal;
+    color: #555555;
+    line-height: 16px;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+}
+.tea-ul .teaName{
+	margin-bottom: 5px;
+}
+/*.teaName{
+    padding-bottom: 15px;
+    font-weight: normal;
+    color: #555555;
+    line-height: 16px;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+}*/
+.tea-ul li .teaBox{
+	position: relative;
+}
+.tea-ul li .teaName:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #519f10;
+    left: 0px;
+    bottom: 0px;			   
+    margin: 0;
+    transition: all .6s ease 0s;
+}
+.tea-ul li:hover .teaName:before{								
+	 width: 100%;
+	 transition: all .6s ease 0s;
+}
+.tea-ul .teaName{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+.aTitle{
+    color: #555555;		
+	font-size: 16px;
+	line-height: 22px;
+}
+.tea-ul li:hover .teaName>a{
+	color: #519f10 !important;
+}
+/*price*/
+.tea-item .teaPrice{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.ellipsis {
+    display: inline-block;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+ .tea-item .teaPrice .price{
+    color: #555555;
+    font-size: 16px;
+    font-family: sans-serif;
+ }
+ /*arrow*/
+.arrow-vc{
+	display: block;
+	max-width: 100%;
+	text-align: center;
+}
+.arrow-element{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 9px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.a-vc-btn{
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    background-color: transparent;
+    color: #5472d2;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    word-wrap: break-word;			    
+    user-select: none;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+    line-height: normal;
+    font-size: 14px;
+    padding: 14px 20px;
+}
+.a-vc-element{
+    font-size: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-width: 2px;
+    border-color: #90af6b;
+    background-color: #90af6b;
+    color: #fff;
+}
+a.a-vc-element:hover{
+	color: white;
+}
+.arrow-vc a:hover{
+	text-decoration: none;
+}
+@media only screen and (min-width:992px ) {
+	section.section.a-tea-row{
+	padding-left: 0;
+	padding-right: 0;
+	/*padding-top: 10vh;*/
+	/*padding-bottom: 10vh;*/
+	margin-top: 0;
+	}
+	.teaLeaveMiddle{
+		padding-top: 10vh;
+	}
+	.arrowHead{
+		padding-bottom: 10vh;
+	}				
+}
+@media only screen and (max-width: 992px) {
+	.a-tea-row{
+		padding: 20px 15px;
+		margin-top: 0;
+		background-color: #f7f7f7;
+	}
+}
+/********************新茶上市 end**************************/
+/*******************关于我们   start**************************/
+.index-about-row{
+	margin-bottom: 0;
+	border-radius: 0;
+	color: #080808;
+}
+@media only screen and (min-width:992px ) {
+	padding-left: 0;
+    padding-right: 0;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+    margin-top: 0;
+}
+.bg-media{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.bg-media-img{
+	background-image: url(../img/index/08-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.index-about-row .footer-row{
+	padding: 0 40px;
+}
+@media only screen and (min-width:992px ) {
+	section.section.index-about-row{
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	.footer-row .vc-span12{
+		width: 100%;
+	}
+	.op-about>.col-inner{
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+	
+}
+.col-inner-about{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    position: relative;
+}
+.vc-header-about{
+    position: relative;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 0;
+}
+.footer-title.center{
+	text-align: center;
+}
+@media only screen and (min-width:992px ) {
+	section.section.about-row-sec2{
+	    padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+	}
+}
+.about-row-sec2{
+    margin-bottom: 0;
+    border-radius: 0px;
+    border-top: 10px solid rgba(255,255,255,1);
+    border-bottom: 10px solid rgba(255,255,255,1);
+    border-left: 10px solid rgba(255,255,255,1);
+    border-right: 10px solid rgba(255,255,255,1);
+    color: #808080;
+}
+.footer-col-a{
+    padding: 0px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+@media only screen and (min-width: 992px) {
+	.footer-row .footer-col-a{
+	    width: 44.57722689075631%;
+	    }
+	    .footer-col-a>.col-inner{
+    	    padding-left: 0;
+		    padding-right: 0;
+		    padding-top: 0;
+		    padding-bottom: 0;
+	    }
+}
+.vc-img-about{
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.bitImg-about{
+	text-align: center;
+	margin-bottom: 0;
+}
+@media only screen and (max-width:992px ) {
+	.bitImg-about .footer-wrapper img{
+		display: inline-block;
+	}
+	.index-about-row .footer-row{
+		padding:0 !important;
+	}
+}
+.bitImg-about .footer-wrapper img{
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+@media only screen and (min-width: 992px) {
+	.footer-row .footer-col-b{
+	    width: 55.4%;
+	}
+	.footer-col-b>.col-inner{
+	    padding-left: 50px;
+	    padding-right: 50px;
+	    padding-top: 50px;
+	    padding-bottom: 50px;	
+	}
+}
+.footer-col-b{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    position: relative;
+}
+.about-col-text{
+	min-height: 1px;
+    position: relative;
+    line-height: 1.5em;
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0px;
+}
+.about-col-btn{
+	display: block;
+    max-width: 100%;
+}
+.about-col-btn.about-btn-left{
+	text-align: left;
+}
+.about-btn{
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.vc-btn-about{
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    background-color: transparent;
+    color: #5472d2;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    user-select: none;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+    line-height: normal;
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 0;
+}
+.vc-gen-about{
+	font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-width: 2px;
+    border-color: #90af6b;
+    background-color: #90af6b;
+    color: #fff;
+}
+@media only screen and (max-width:992px ) {
+	.footer-row .vc-span6{
+		width: 100%;
+		padding: 0px!important;
+	}
+	.footer-col-b>.col-inner{
+	    margin: 0 auto 0 !important;
+		min-height: 0 !important;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	section.section.index-about-row{
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    margin-top: 0;
+	    min-height: 0;
+	}
+}
+/**********************关于我们  end**********************/
+/**********************iconList start**********************/
+@media only screen and (min-width:992px ) {
+	section.section.icon-row{
+		padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	    margin-top: 0;
+	}
+}
+.icon-row{
+	margin-bottom: 0;
+    border-radius: 0px;
+    color: #808080;
+}
+@media only screen and (min-width: 992px) {
+	section.section.icon-row>.container{
+		max-width: 1280px;
+    	margin: 0 auto;
+	}
+}
+.icon-row .footer-row{
+    padding: 0 40px;
+}
+@media only screen and (min-width: 992px) {
+	.icon-row-inner>.col-inner{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}	
+}
+.i-inner{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    position: relative;
+}
+.icon-img-list{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+@media only screen and (min-width:992px ) {
+	#icon-vc-img .icon-img-list-in .gimg{
+	    width: 16.666667%;
+	}
+}
+.imgs{
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+.icon-vc-inner{
+    position: relative;
+    font-size: 0;
+}
+.i-swan{
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+}
+.icon-img-list-in img{
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.i-swan>img{
+	float: left;
+    display: block;
+    max-width: 100%;
+}
+@media only screen and (max-width:992px ) {
+	section.section.icon-row{
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    padding-top: 40px;
+	    padding-bottom: 50px;
+	    margin-top: 0;
+	    min-height: 0;
+	}
+	.icon-row .container{
+	    margin: 0px auto;
+		max-width: 768px;	
+	}
+	.icon-row .footer-row{
+	    padding: 0!important;
+	}
+	.icon-row-inner>.col-inner{
+	    margin: 0 auto 0 !important;
+	    min-height: 0 !important;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	}
+	#icon-vc-img .icon-img-list-in .gimg{
+	    width: 33.333333%;
+    	text-align: center;
+	}
+}
+/**********************iconList end**********************/
+/*回顶部  start*/
+.lastIcon{
+	position: fixed;
+	width: 35px;
+	height: 35px;
+	right: 15px;
+	bottom: 25px;
+	background: white;
+	z-index: 9999;
+	opacity: 0;
+}
+.lastIcon::before{
+	display: block;
+	content: '\f077';
+	font-family: FontAwesome;
+	text-align: center;
+	line-height: 35px;
+	font-size: 12px;
+}
+/*回顶部  end*/			
